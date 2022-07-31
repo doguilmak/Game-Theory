@@ -73,8 +73,7 @@ TCP Backoff Game written as matrix (more information about game on below).
 
    $i$: $u_i(a) = 1$ if # $\{ j : a_j =    Revolt \} \ge 2,000,000$    
    $u_i(a) = -1$ if # $\{ j : a_j = Revolt \}    \lt 2,000,000$    
-   $u_i(a) = 0$ if  # $\{ j : a_j = Revolt \} \lt    2,000,000$ and $a_i
-   = Not$
+   $u_i(a) = 0$ if  # $\{ j : a_j = Revolt \} \lt    2,000,000$ and $a_i = Not$
 
 ## TCP Backoff
 
