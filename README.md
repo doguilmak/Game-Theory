@@ -65,10 +65,11 @@ TCP Backoff Game written as matrix (more information about game on below).
    
   - Action set for player $i A_i = \{ Revolt, Not \}$
    
-  - Utility function for player $i$: $u_i(a) = 1$ if # $\{ j : a_j =
-   Revolt \} \ge 2,000,000$ $u_i(a) = -1$ if # $\{ j : a_j = Revolt \}
-   \lt 2,000,000$ $u_i(a) = 0$ if  # $\{ j : a_j = Revolt \} \lt
-   2,000,000$ and $a_i = Not$
+ - Utility function for player 
+   $i$: $u_i(a) = 1$ if # $\{ j : a_j =    Revolt \} \ge 2,000,000$    
+   $u_i(a) = -1$ if # $\{ j : a_j = Revolt \}    \lt 2,000,000$    
+   $u_i(a) = 0$ if  # $\{ j : a_j = Revolt \} \lt    2,000,000$ and $a_i
+   = Not$
 
 ## TCP Backoff
 
