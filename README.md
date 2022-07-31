@@ -223,7 +223,9 @@ The possible outcomes are:
 	    games2play-=1
 
 References:
+
     -https://en.wikipedia.org/wiki/Prisoner's_dilemma
+    
     -https://www.investopedia.com/terms/p/prisoners-dilemma.asp#:~:text=A%20prisoner's%20dilemma%20is%20a,many%20aspects%20of%20the%20economy.
 
 ## Matching Pennies
