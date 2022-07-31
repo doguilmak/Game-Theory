@@ -64,8 +64,8 @@ Reference: [The University of British Columbia CS ISCI 330 Lecture 3](https://ww
 	        
 	    elif user_action == "defective" and computer_action_random == "defective":
 	        print("Your colleague choone defective implementation too. Users are going to experience an average packet delay of 3 ms.")
-	        your_adopter+=1
-	        another_adopter+=1
+	        your_adopter+=3
+	        another_adopter+=3
 	        
 	    else:
 	        print("Unexpected input.")
