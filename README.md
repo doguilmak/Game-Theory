@@ -5,8 +5,9 @@
 
 In this project, you will be able to access the games and codes that I made which are shown to us in the Game Theory lecture. These games were created in Python. Within the scope of this project, information will be given about the rules and some details of **TCP Backoff, Prisoner's dilemma, Matching Pennies, Coordination, and Battle of the Sexes game**.
 
-### Key Ingredients
 ---
+
+### Key Ingredients
 
 #### Players
 
@@ -20,9 +21,9 @@ It is about what players can do in a game or auction. It is about what are you g
 
 For example, do players care about some profit? Do they care about other players?
 
-### Two Standart Representations
-
 ---
+
+### Two Standart Representations
 
 #### Normal Form
 
@@ -181,6 +182,50 @@ The possible outcomes are:
 References:
     -https://en.wikipedia.org/wiki/Prisoner's_dilemma
     -https://www.investopedia.com/terms/p/prisoners-dilemma.asp#:~:text=A%20prisoner's%20dilemma%20is%20a,many%20aspects%20of%20the%20economy.
+
+[Game code on Python 3.9](https://github.com/doguilmak/Game-Theory/blob/main/games/TCPgame.py):
+
+    import random
+    you_as_prisoner=0
+    another_prisoner=0   
+    games2play = int(input('How many games would you like to play?\n'))
+    possible_actions = ["silent", "betrays"]
+     
+    while True:    
+	    if games2play == 0:
+	        print("\nRANDOM SELECTION")
+	        print(f"Your serves in prison as year: {you_as_prisoner}")
+	        print(f"Prisoners serves in prison as year: {another_prisoner}")
+	        break   
+	        
+	    prisoner_action_random = random.choice(possible_actions)
+	    print("\n --------------------------\n")
+	    user_action = input("Enter a choice (silent, betrays): \n")
+	    print(f"You chose {user_action}, prisoner chose {prisoner_action_random}.")
+	    if user_action == "silent" and prisoner_action_random == "silent":
+	        print("Each of you serves 1 years in prison.")
+	        you_as_prisoner+=1
+	        another_prisoner+=1
+	        
+	    elif user_action == "silent" and prisoner_action_random == "betrays":
+	        print("You will will serve three years in prison and prisoner will be set free.")
+	        you_as_prisoner+=3
+	        another_prisoner+=0
+
+	    elif user_action == "betrays" and prisoner_action_random == "silent":
+	        print("You will be set free and another prisoner will serve three years in prison.")
+	        you_as_prisoner+=0
+	        another_prisoner+=3
+	        
+	    elif user_action == "betrays" and prisoner_action_random == "betrays":
+	        print("Each of you serves two years in prison.")
+	        you_as_prisoner+=2
+	        another_prisoner+=2
+	        
+	    else:
+	        print("Unexpected input.")
+	        
+	    games2play-=1
 
 
 ## Matching Pennies
