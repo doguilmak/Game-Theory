@@ -95,9 +95,6 @@ Questions:
  - Repetitions? (finite? infinite?)
  - Does it matter if I believe that my opponent is rational?
 
-Reference: [The University of British Columbia CS ISCI 330 Lecture 3](https://www.cs.ubc.ca/~kevinlb/teaching/isci330%20-%202006-7/Lectures/lect3.pdf) 
-
-
 [Game code on Python 3.9](https://github.com/doguilmak/Game-Theory/blob/main/games/TCPgame.py):
 
 	import random
@@ -145,8 +142,9 @@ Reference: [The University of British Columbia CS ISCI 330 Lecture 3](https://ww
 
 Play the TCP Backoff game: http://gametheory.cs.ubc.ca/tcpbackoff?
 
-## Prisoner's Dilemma
+Reference: [The University of British Columbia CS ISCI 330 Lecture 3](https://www.cs.ubc.ca/~kevinlb/teaching/isci330%20-%202006-7/Lectures/lect3.pdf) 
 
+## Prisoner's Dilemma
 
 The prisoner's dilemma is a paradox in decision analysis in which two individuals acting in their own self-interests do not produce the optimal outcome. The prisoner's dilemma is a standard example of a game analyzed in game theory that shows why two completely rational individuals might not  cooperate, even if it appears that it is in their best interests to do so. It was originally framed by Merrill Flood and Melvin Dresher while working at RAND in 1950. Albert W. Tucker formalized the game with prison sentence rewards and named it "prisoner's dilemma", a version of which was stated by William Poundstone in his 1993 book Prisoner's Dilemma as:
 
@@ -179,11 +177,8 @@ The possible outcomes are:
  -  If A and B    both remain silent, both of them will serve one year in
    prison (on    the lesser charge).
 
-References:
-    -https://en.wikipedia.org/wiki/Prisoner's_dilemma
-    -https://www.investopedia.com/terms/p/prisoners-dilemma.asp#:~:text=A%20prisoner's%20dilemma%20is%20a,many%20aspects%20of%20the%20economy.
 
-[Game code on Python 3.9](https://github.com/doguilmak/Game-Theory/blob/main/games/TCPgame.py):
+[Game code on Python 3.9](https://github.com/doguilmak/Game-Theory/blob/main/games/prisoners_dilemma.py):
 
     import random
     you_as_prisoner=0
@@ -227,6 +222,9 @@ References:
 	        
 	    games2play-=1
 
+References:
+    -https://en.wikipedia.org/wiki/Prisoner's_dilemma
+    -https://www.investopedia.com/terms/p/prisoners-dilemma.asp#:~:text=A%20prisoner's%20dilemma%20is%20a,many%20aspects%20of%20the%20economy.
 
 ## Matching Pennies
 
