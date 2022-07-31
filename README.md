@@ -6,6 +6,7 @@
 In this project, you will be able to access the games and codes that I made which are shown to us in the Game Theory lecture. These games were created in Python. Within the scope of this project, information will be given about the rules and some details of **TCP Backoff, Prisoner's dilemma, Matching Pennies, Coordination, and Battle of the Sexes game**.
 
 ### Key Ingredients
+---
 
 #### Players
 
@@ -20,6 +21,8 @@ It is about what players can do in a game or auction. It is about what are you g
 For example, do players care about some profit? Do they care about other players?
 
 ### Two Standart Representations
+
+---
 
 #### Normal Form
 
@@ -63,10 +66,10 @@ TCP Backoff Game written as matrix (more information about game on below).
 
  - Player: $N = \{ 1, 2, ... , 100,000,000 \}$ 
    
-  - Action set for player $i A_i = \{ Revolt, Not \}$
+ - Action set for player $i A_i = \{ Revolt, Not \}$
    
  - Utility function for player 
- 
+
    $i$: $u_i(a) = 1$ if # $\{ j : a_j =    Revolt \} \ge 2,000,000$    
    $u_i(a) = -1$ if # $\{ j : a_j = Revolt \}    \lt 2,000,000$    
    $u_i(a) = 0$ if  # $\{ j : a_j = Revolt \} \lt    2,000,000$ and $a_i
