@@ -63,7 +63,7 @@ TCP Backoff Game written as matrix (more information about game on below).
 <br>
 
 |  | $$C$$ | $$D$$ |
-|--|--|--|
+|:--:|:--:|:--:|
 | **$$C$$** | $-1$, $-1$ | $-4$, $0$ |
 | **$$D$$** | $0$, $-4$ | $-3$, $-3$ |
 
@@ -84,7 +84,7 @@ TCP Backoff Game written as matrix (more information about game on below).
 Internet traffic is governed by the TCP protocol. When the protocol is correctly implemented, it includes a **backoff mechanism**: if the rates at which a sender sends information packets into the network causes congestion, the sender reduces this rate for a while until the congestion subsides. A defective implementation of TCP does not back off when congestion occurs. Imagine that you and a colleague are the only people using the internet. You each have two possible strategies: $C$ (using a correct implementation) and $D$ (using a defective one). If both you and your colleague adopt $C$ then you will both experience an average packet delay of 1 ms. If you both adopt $D$ you will both experience a delay of 3 ms, because you will both experience more lost packets. If one of you adopts $D$ and the other adopts $C$ then the $D$ adopter will experience no delay at all, and the $C$ adopter will experience a delay of 4 ms. Of course, both you and your colleague want to minimize these delays.
 
 |  | $$C$$ | $$D$$ |
-|--|--|--|
+|:--:|:--:|:--:|
 | **$$C$$** | $-1$, $-1$ | $-4$, $0$ |
 | **$$D$$** | $0$, $-4$ | $-3$, $-3$ |
 
@@ -157,7 +157,7 @@ Two members of a criminal gang are arrested and imprisoned. Each prisoner is in 
 It is implied that the prisoners will have no opportunity to reward or punish their partner other than the prison sentences they get and that their decision by itself will not affect their reputation in the future. As betraying a partner offers a greater reward than cooperating with them, all purely rational self-interested prisoners will betray the other, meaning the only possible outcome for two purely rational prisoners is for them to betray each other, even though mutual cooperation would yield greater reward. 
 
 |  | $$B\ stays\ silent$$ | $$B\ betrays$$ |
-|--|--|--|
+|:--:|:--:|:--:|
 | **$$A\ stays\ silent$$** | $R$, $R$ | $S$, $T$ |
 | **$$A\ betrays$$** | $T$, $S$ | $P$, $P$ |
 
@@ -168,9 +168,9 @@ $T \gt R \gt P \gt S$
 The payoff relation $R \gt P$ implies that mutual cooperation is superior to mutual defection, while the payoff relationships $T \gt R$ and $P \gt S$ imply that **defection is the dominant strategy for both agents**.
 
 |  | $B\ stays\ silent$ | $B\ betrays$ |
-|--|--|--|
+|:--:|:--:|:--:|
 | **$A\ stays\ silent$** | $-1$, $-1$ | $-3$, $0$ |
-| **$A\ betrays$** | $0$, $-3$ | -2, $-2$ |
+| **$A\ betrays$** | $0$, $-3$ | $-2$, $-2$ |
 
 The possible outcomes are:
 
@@ -241,7 +241,7 @@ Matching pennies is the name for a simple game used in [game theory](https://en.
 <br>
 
 |  | $$Heads$$ | $$Tails$$ |
-|--|--|--|
+|:--:|:--:|:--:|
 | **$$Heads$$** | $+1$, $-1$ | $-1$, $+1$ |
 | **$$Tails$$** | $-1$, $+1$ | $+1$, $-1$ |
 
