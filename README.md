@@ -22,6 +22,8 @@ It is about what players can do in a game or auction. It is about what are you g
 
 For example, do players care about some profit? Do they care about other players?
 
+<br>
+
 ### Two Standart Representations
 
 #### Normal Form
