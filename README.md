@@ -7,6 +7,7 @@ In this project, you will be able to access the games and codes that I made whic
 
 ---
 
+
 ### Key Ingredients
 
 #### Players
@@ -21,7 +22,7 @@ It is about what players can do in a game or auction. It is about what are you g
 
 For example, do players care about some profit? Do they care about other players?
 
----
+<br>
 
 ### Two Standart Representations
 
@@ -31,7 +32,7 @@ List what payoffs as a function or their actions. Players moved simultaneously.
 
 Finite, $n$-person normal game: $\langle N, A, u \rangle:$
 
-Players $N = \{ 1, 2, ... , n\}$ is a finite set of $n$, indexed by $i$.
+ - Players $N = \{ 1, 2, ... , n\}$ is a finite set of $n$, indexed by $i$.
 
 Actions set for player $i$ $A_i$:
 
@@ -58,10 +59,13 @@ Writing a 2-player game as a matrix:
    player first and then the column.
 
 TCP Backoff Game written as matrix (more information about game on below).
-|  | C | D |
+
+<br>
+
+|  | $$C$$ | $$D$$ |
 |--|--|--|
-| **C** | -1, -1 | -4, 0 |
-| **D** | 0, -4 | -3, -3 |
+| **$$C$$** | $-1$, $-1$ | $-4$, $0$ |
+| **$$D$$** | $0$, $-4$ | $-3$, $-3$ |
 
 #### A Large Collective Action Game
 
@@ -77,12 +81,12 @@ TCP Backoff Game written as matrix (more information about game on below).
 
 ## TCP Backoff
 
-Internet traffic is governed by the TCP protocol. When the protocol is correctly implemented, it includes a “backoff mechanism”: if the rates at which a sender sends information packets into the network causes congestion, the sender reduces this rate for a while until the congestion subsides. A defective implementation of TCP does not back off when congestion occurs. Imagine that you and a colleague are the only people using the internet. You each have two possible strategies: C (using a correct implementation) and D (using a defective one). If both you and your colleague adopt C then you will both experience an average packet delay of 1 ms. If you both adopt D you will both experience a delay of 3 ms, because you will both experience more lost packets. If one of you adopts D and the other adopts C then the D adopter will experience no delay at all, and the C adopter will experience a delay of 4 ms. Of course, both you and your colleague want to minimize these delays.
+Internet traffic is governed by the TCP protocol. When the protocol is correctly implemented, it includes a **backoff mechanism**: if the rates at which a sender sends information packets into the network causes congestion, the sender reduces this rate for a while until the congestion subsides. A defective implementation of TCP does not back off when congestion occurs. Imagine that you and a colleague are the only people using the internet. You each have two possible strategies: $C$ (using a correct implementation) and $D$ (using a defective one). If both you and your colleague adopt $C$ then you will both experience an average packet delay of 1 ms. If you both adopt $D$ you will both experience a delay of 3 ms, because you will both experience more lost packets. If one of you adopts $D$ and the other adopts $C$ then the $D$ adopter will experience no delay at all, and the $C$ adopter will experience a delay of 4 ms. Of course, both you and your colleague want to minimize these delays.
 
-|  | C | D |
+|  | $$C$$ | $$D$$ |
 |--|--|--|
-| **C** | -1, -1 | -4, 0 |
-| **D** | 0, -4 | -3, -3 |
+| **$$C$$** | $-1$, $-1$ | $-4$, $0$ |
+| **$$D$$** | $0$, $-4$ | $-3$, $-3$ |
 
 Questions:
 
@@ -141,7 +145,8 @@ Questions:
 
 Play the TCP Backoff game: http://gametheory.cs.ubc.ca/tcpbackoff?
 
-Reference: [The University of British Columbia CS ISCI 330 Lecture 3](https://www.cs.ubc.ca/~kevinlb/teaching/isci330%20-%202006-7/Lectures/lect3.pdf) 
+Reference: 
+ - [The University of British Columbia CS ISCI 330 Lecture 3](https://www.cs.ubc.ca/~kevinlb/teaching/isci330%20-%202006-7/Lectures/lect3.pdf) 
 
 ## Prisoner's Dilemma
 
@@ -151,29 +156,31 @@ Two members of a criminal gang are arrested and imprisoned. Each prisoner is in 
 
 It is implied that the prisoners will have no opportunity to reward or punish their partner other than the prison sentences they get and that their decision by itself will not affect their reputation in the future. As betraying a partner offers a greater reward than cooperating with them, all purely rational self-interested prisoners will betray the other, meaning the only possible outcome for two purely rational prisoners is for them to betray each other, even though mutual cooperation would yield greater reward. 
 
-|  | B stays silent | B betrays |
+|  | $$B\ stays\ silent$$ | $$B\ betrays$$ |
 |--|--|--|
-| **A stays silent** | R, R | S, T |
-| **A betrays** | T, S | P, P |
+| **$$A\ stays\ silent$$** | $R$, $R$ | $S$, $T$ |
+| **$$A\ betrays$$** | $T$, $S$ | $P$, $P$ |
+
+<br>
 
 $T \gt R \gt P \gt S$
 
 The payoff relation $R \gt P$ implies that mutual cooperation is superior to mutual defection, while the payoff relationships $T \gt R$ and $P \gt S$ imply that **defection is the dominant strategy for both agents**.
 
-|  | B stays silent | B betrays |
+|  | $B\ stays\ silent$ | $B\ betrays$ |
 |--|--|--|
-| **A stays silent** | -1, -1 | -3, 0 |
-| **A betrays** | 0, -3 | -2, -2 |
+| **$A\ stays\ silent$** | $-1$, $-1$ | $-3$, $0$ |
+| **$A\ betrays$** | $0$, $-3$ | -2, $-2$ |
 
 The possible outcomes are:
 
- - If A and B each betray the other, each of them serves two years in
+ - If $A$ and $B$ each betray the other, each of them serves two years in
    prison 
- - If A betrays B but B remains silent, A will be set free and B
+ - If $A$ betrays $B$ but $B$ remains silent, $A$ will be set free and $B$
    will serve three years in prison 
- - If A remains silent but B betrays A,    A will serve three years in
-   prison and B will be set free    
- -  If A and B    both remain silent, both of them will serve one year in
+ - If $A$ remains silent but $B$ betrays $A$, $A$ will serve three years in
+   prison and $B$ will be set free    
+ -  If $A$ and $B$ both remain silent, both of them will serve one year in
    prison (on    the lesser charge).
 
 
@@ -223,13 +230,80 @@ The possible outcomes are:
 
 References:
 
--https://en.wikipedia.org/wiki/Prisoner's_dilemma
+- https://en.wikipedia.org/wiki/Prisoner's_dilemma
 
--https://www.investopedia.com/terms/p/prisoners-dilemma.asp#:~:text=A%20prisoner's%20dilemma%20is%20a,many%20aspects%20of%20the%20economy.
+- https://www.investopedia.com/terms/p/prisoners-dilemma.asp#:~:text=A%20prisoner's%20dilemma%20is%20a,many%20aspects%20of%20the%20economy.
 
 ## Matching Pennies
 
-To be added soon...
+Matching pennies is the name for a simple game used in [game theory](https://en.wikipedia.org/wiki/Game_theory "Game theory"). It is played between two players, Even and Odd. One player wants to match, the other wants to mismatch. Each player has a [penny](https://en.wikipedia.org/wiki/Penny "Penny") and must secretly turn the penny to heads or tails. The players then reveal their choices simultaneously. If the pennies match (both heads or both tails), then Even keeps both pennies, so wins one from Odd ($+1$ for Even, $−1$ for Odd). If the pennies do not match (one heads and one tails) Odd keeps both pennies, so receives one from Even ($−1$ for Even, $+1$ for Odd).
+
+<br>
+
+|  | $$Heads$$ | $$Tails$$ |
+|--|--|--|
+| **$$Heads$$** | $+1$, $-1$ | $-1$, $+1$ |
+| **$$Tails$$** | $-1$, $+1$ | $+1$, $-1$ |
+
+<br>
+
+Matching Pennies is a  [zero-sum game](https://en.wikipedia.org/wiki/Zero-sum_game "Zero-sum game")  because each participant's gain or loss of utility is exactly balanced by the losses or gains of the utility of the other participants. If the participants' total gains are added up and their total losses subtracted, the sum will be zero.
+
+The game can be written in a  [payoff matrix](https://en.wikipedia.org/wiki/Payoff_matrix "Payoff matrix")  (pictured right - from Even's point of view). Each cell of the matrix shows the two players' payoffs, with Even's payoffs listed first.
+
+Matching pennies is used primarily to illustrate the concept of  [mixed strategies](https://en.wikipedia.org/wiki/Mixed_strategy "Mixed strategy")  and a mixed strategy  [Nash equilibrium](https://en.wikipedia.org/wiki/Nash_equilibrium "Nash equilibrium").[[1]](https://en.wikipedia.org/wiki/Matching_pennies#cite_note-1)
+
+This game has no  [pure strategy](https://en.wikipedia.org/wiki/Pure_strategy "Pure strategy")  [Nash equilibrium](https://en.wikipedia.org/wiki/Nash_equilibrium "Nash equilibrium")  since there is no pure strategy (heads or tails) that is a  [best response](https://en.wikipedia.org/wiki/Best_response "Best response")  to a best response. In other words, there is no pair of pure strategies such that neither player would want to switch if told what the other would do. Instead, the unique Nash equilibrium of this game is in  [mixed strategies](https://en.wikipedia.org/wiki/Mixed_strategy "Mixed strategy"): each player chooses heads or tails with equal probability.[[2]](https://en.wikipedia.org/wiki/Matching_pennies#cite_note-2)  In this way, each player makes the other indifferent between choosing heads or tails, so neither player has an incentive to try another strategy.
+
+[Game code on Python 3.9](https://github.com/doguilmak/Game-Theory/blob/main/games/matching_pennies.py):
+
+	import random
+	your_penny=0
+	person_penny=0      
+	    
+	games2play = int(input('How many games would you like to play?\n'))
+	possible_actions = ["heads", "tails"] 
+	while True:
+	    
+	    if games2play == 0:
+	        print("\nRANDOM SELECTION")
+	        print(f"Your penny: {your_penny}")
+	        print(f"Person's penny': {person_penny}")
+	        break   
+	        
+	    person_action_random = random.choice(possible_actions)
+	    print("\n --------------------------\n")
+	    user_action = input("Enter a choice (heads, tails): \n")
+	    print(f"You chose {user_action}, person chose {person_action_random}.")
+	    if user_action == "heads" and person_action_random == "heads":
+	        print("You took a penny.")
+	        your_penny+=1
+	        person_penny-=1
+	        
+	    elif user_action == "heads" and person_action_random == "tails":
+	        print("You lost a penny.")
+	        your_penny-=1
+	        person_penny+=1
+
+	    elif user_action == "tails" and person_action_random == "heads":
+	        print("You lost a penny")
+	        your_penny-=1
+	        person_penny+=1
+	        
+	    elif user_action == "tails" and person_action_random == "tails":
+	        print("You took a penny.")
+	        your_penny+=1
+	        person_penny-=1
+	        
+	    else:
+	        print("Unexpected input.")
+	        
+	    games2play-=1
+
+References:
+
+ - https://en.wikipedia.org/wiki/Matching_pennies
+ - http://web.stanford.edu/~rjohari/teaching/notes/336_lecture7_2007.pdf
 
 ## Coordination Game
 
