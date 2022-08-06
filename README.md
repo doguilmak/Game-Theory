@@ -150,7 +150,7 @@ Reference:
 
 ## Prisoner's Dilemma
 
-The prisoner's dilemma is a paradox in decision analysis in which two individuals acting in their own self-interests do not produce the optimal outcome. The prisoner's dilemma is a standard example of a game analyzed in game theory that shows why two completely rational individuals might not  cooperate, even if it appears that it is in their best interests to do so. It was originally framed by Merrill Flood and Melvin Dresher while working at RAND in 1950. Albert W. Tucker formalized the game with prison sentence rewards and named it "prisoner's dilemma", a version of which was stated by William Poundstone in his 1993 book Prisoner's Dilemma as:
+The prisoner's dilemma is a paradox in decision analysis in which two individuals acting in their own self-interests do not produce the optimal outcome. The prisoner's dilemma is a standard example of a game analyzed in game theory that shows why two completely rational individuals might not  cooperate, even if it appears that it is in their best interests to do so. It was originally framed by Merrill Flood and Melvin Dresher while working at RAND in 1950. Albert W. Tucker formalized the game with prison sentence rewards and named it **prisoner's dilemma**, a version of which was stated by William Poundstone in his 1993 book Prisoner's Dilemma as:
 
 Two members of a criminal gang are arrested and imprisoned. Each prisoner is in solitary confinement with no means of speaking to or exchanging messages with the other. The police admit they don't have enough evidence to convict the pair on the principal charge. They plan to sentence both to a year in prison on a lesser charge. Simultaneously, the police offer each prisoner a Faustian bargain.
 
