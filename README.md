@@ -236,7 +236,7 @@ References:
 
 ## Matching Pennies
 
-Matching pennies is the name for a simple game used in [game theory](https://en.wikipedia.org/wiki/Game_theory "Game theory"). It is played between two players, Even and Odd. One player wants to match, the other wants to mismatch. Each player has a [penny](https://en.wikipedia.org/wiki/Penny "Penny") and must secretly turn the penny to heads or tails. The players then reveal their choices simultaneously. If the pennies match (both heads or both tails), then Even keeps both pennies, so wins one from Odd ($+1$ for Even, $−1$ for Odd). If the pennies do not match (one heads and one tails) Odd keeps both pennies, so receives one from Even ($−1$ for Even, $+1$ for Odd).
+Matching pennies is the name for a simple game used in [game theory](https://en.wikipedia.org/wiki/Game_theory "Game theory"). It is played between two players, Even and Odd. One player wants to match, the other wants to mismatch. Each player has a [penny](https://en.wikipedia.org/wiki/Penny "Penny") and must secretly turn the penny to heads or tails. The players then reveal their choices simultaneously. If the pennies match (both heads or both tails), then Even keeps both pennies, so wins one from Odd ( $+1$ for Even, $−1$ for Odd). If the pennies do not match (one heads and one tails) Odd keeps both pennies, so receives one from Even ( $−1$ for Even, $+1$ for Odd).
 
 <br>
 
