@@ -307,7 +307,66 @@ References:
 
 ## Coordination Game
 
-To be added soon...
+Here's the other extreme, of games of pure coordination or pure cooperation. In this case, all agents have exactly the same interest. In other words, the payoffs for every action vector that they take is the same. And so the utility for player 'i' is always the same as the utility for player 'j' for every action vector that they choose. And so again we here, too, will need to write each cell of matrix only one number because it's common to all the players. It's drives home that perhaps the unfortunate term **noncooperate** game theory that describes this dominant strand of game theory that we are discussing for now It's, the name was suggested these are games for, that descibe situations that are inherently conflictual but as we see they apply also to games in which the interests of the players coincide. So here's a game that describes the purely cooperative situation. We can each decide whether to go to our respective left or respective right. And if we pick the same side then it is all good for us. We are trying to avoid a collision in coordination game. If we don't do that, then we do collide and that's equally bad for both of us. We do not punish but we can't earn any payoff if we do collide. Of course in general, games will be neither purelly cooperative nor purely conflictual and here's a game that exemplifies that.
+
+In this game, players have **exactly the same interests:**
+
+ - No conflicts: all players wants to do or choose same things.
+ - $\forall a \in A, \forall i, j, u_i(a) = u_j(a)$
+
+<br>
+
+|  | $$Left$$ | $$Right$$ |
+|:--:|:--:|:--:|
+| **$$Left$$** | $+1$, $+1$ | $0$, $0$ |
+| **$$Right$$** | $0$, $0$ | $+1$, $+1$ |
+
+<br>
+
+[Game code on Python 3.9](https://github.com/doguilmak/Game-Theory/blob/main/games/cooperation.py):
+
+	import random
+	your_desicion=0
+	person_desicion=0      
+	    
+	games2play = int(input('How many games would you like to play?\n'))
+	possible_actions = ["left", "right"] 
+	while True:
+	    
+	    if games2play == 0:
+	        print("\nRANDOM SELECTION")
+	        print(f"You and your friend choose the same way {your_desicion} times.")
+	        break   
+	        
+	    person_action_random = random.choice(possible_actions)
+	    print("\n --------------------------\n")
+	    user_action = input("Enter a choice (left, right): \n")
+	    print(f"You chose {user_action}, person chose {person_action_random}.")
+	    if user_action == "left" and person_action_random == "left":
+	        print("You both took the same way!")
+	        your_desicion+=1
+	        person_desicion+=1
+	        
+	    elif user_action == "left" and person_action_random == "right":
+	        print("Unfortunately you both didn't choose the same way.")
+
+	    elif user_action == "right" and person_action_random == "left":
+	        print("Unfortunately you both didn't choose the same way.")
+	        
+	    elif user_action == "right" and person_action_random == "right":
+	        print("You both took the same way!")
+	        your_desicion+=1
+	        person_desicion-=1
+	        
+	    else:
+	        print("Unexpected input.")
+	        
+	    games2play-=1
+
+References:
+
+ - https://en.wikipedia.org/wiki/Coordination_game
+ - https://www.coursera.org/learn/game-theory-1
 
 ## Battle of the Sexes
 
