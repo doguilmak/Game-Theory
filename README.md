@@ -32,7 +32,7 @@ List what payoffs as a function or their actions. Players moved simultaneously.
 
 Finite, $n$-person normal game: $\langle N, A, u \rangle:$
 
- - Players $N = \{ 1, 2, ... , n\}$ is a finite set of $n$, indexed by $i$.
+ - Players $N = \{ 1, 2, ... , n \}$ is a finite set of $n$, indexed by $i$.
 
 Actions set for player $i$ $A_i$:
 
