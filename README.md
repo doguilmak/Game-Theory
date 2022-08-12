@@ -69,7 +69,7 @@ TCP Backoff Game written as matrix (more information about game on below).
 
 #### A Large Collective Action Game
 
- - Player: $N = \{ 1, 2, ... , 100,000,000 \}$ 
+ - Player: $N = \{1, 2, ... , 100.000.000\}$ 
    
  - Action set for player $i A_i = \{ Revolt, Not \}$
    
@@ -78,6 +78,28 @@ TCP Backoff Game written as matrix (more information about game on below).
    $i$: $u_i(a) = 1$ if # $\{ j : a_j =    Revolt \} \ge 2,000,000$    
    $u_i(a) = -1$ if # $\{ j : a_j = Revolt \}    \lt 2,000,000$    
    $u_i(a) = 0$ if  # $\{ j : a_j = Revolt \} \lt    2,000,000$ and $a_i = Not$
+
+
+### Best Response
+
+the best response is **the strategy (or strategies) which produces the most favorable outcome for a player, taking other players' strategies as given.**
+
+Let $a_{-i}$ = $\langle a_1, ...\ , a_{i-1}, a_{i+1}, ...\ , a_n \rangle$, now $a = (a_{-i}, a_i)$
+
+$$a^*_{i} \in BR(a_{-i}) \iff \forall a_i \in A_i, u_i(a^*_{i}, a_{-i}) \ge u_i(a_{i}, a_{-i}).$$
+
+### Nash Equilibrium
+
+Nash equilibrium is a concept within game theory where the optimal outcome of a game is where there is no incentive to deviate from the initial strategy. More specifically, the Nash equilibrium is a concept of game theory where the optimal outcome of a game is one where no player has an incentive to deviate from their chosen strategy after considering an opponent's choice.1
+
+Overall, an individual can receive no incremental benefit from changing actions, assuming other players remain constant in their strategies. A game may have multiple Nash equilibria or none at all.
+
+$a = \langle a_1, ...\ , a_n \rangle$ is a **Pure Strategy** Nash Equilibrium $\iff \forall_i, a_i \in BR(a_{-i}).$
+
+Reference: 
+ - [Investopedia](https://www.cs.ubc.ca/~kevinlb/teaching/isci330%20-%202006-7/Lectures/lect3.pdf)
+ - [Coursera Game Theory](https://www.coursera.org/learn/game-theory-1)
+
 
 ## TCP Backoff
 
@@ -230,9 +252,9 @@ The possible outcomes are:
 
 References:
 
-- https://en.wikipedia.org/wiki/Prisoner's_dilemma
+- [Wikipedia](https://en.wikipedia.org/wiki/Prisoner%27s_dilemma)
 
-- https://www.investopedia.com/terms/p/prisoners-dilemma.asp#:~:text=A%20prisoner's%20dilemma%20is%20a,many%20aspects%20of%20the%20economy.
+- [Investopedia](https://www.investopedia.com/terms/p/prisoners-dilemma.asp#:~:text=A%20prisoner%27s%20dilemma%20is%20a,many%20aspects%20of%20the%20economy.)
 
 ## Matching Pennies
 
@@ -242,12 +264,12 @@ Matching pennies is the name for a simple game used in [game theory](https://en.
 
 |  | $$Heads$$ | $$Tails$$ |
 |:--:|:--:|:--:|
-| **$$Heads$$** | $+1$, $-1$ | $-1$, $+1$ |
-| **$$Tails$$** | $-1$, $+1$ | $+1$, $-1$ |
+| **$$Heads$$** | $1$, $-1$ | $-1$, $1$ |
+| **$$Tails$$** | $-1$, $1$ | $1$, $-1$ |
 
 <br>
 
-Matching Pennies is a  [zero-sum game](https://en.wikipedia.org/wiki/Zero-sum_game "Zero-sum game")  because each participant's gain or loss of utility is exactly balanced by the losses or gains of the utility of the other participants. If the participants' total gains are added up and their total losses subtracted, the sum will be zero. The game can be written in a  [payoff matrix](https://en.wikipedia.org/wiki/Payoff_matrix "Payoff matrix")  (pictured right - from Even's point of view). Each cell of the matrix shows the two players' payoffs, with Even's payoffs listed first. Matching pennies is used primarily to illustrate the concept of  [mixed strategies](https://en.wikipedia.org/wiki/Mixed_strategy "Mixed strategy")  and a mixed strategy  [Nash equilibrium](https://en.wikipedia.org/wiki/Nash_equilibrium "Nash equilibrium").[[1]](https://en.wikipedia.org/wiki/Matching_pennies#cite_note-1) This game has no  [pure strategy](https://en.wikipedia.org/wiki/Pure_strategy "Pure strategy")  [Nash equilibrium](https://en.wikipedia.org/wiki/Nash_equilibrium "Nash equilibrium")  since there is no pure strategy (heads or tails) that is a  [best response](https://en.wikipedia.org/wiki/Best_response "Best response")  to a best response. In other words, there is no pair of pure strategies such that neither player would want to switch if told what the other would do. Instead, the unique Nash equilibrium of this game is in  [mixed strategies](https://en.wikipedia.org/wiki/Mixed_strategy "Mixed strategy"): each player chooses heads or tails with equal probability.[[2]](https://en.wikipedia.org/wiki/Matching_pennies#cite_note-2)  In this way, each player makes the other indifferent between choosing heads or tails, so neither player has an incentive to try another strategy.
+Matching Pennies is a  [zero-sum game](https://en.wikipedia.org/wiki/Zero-sum_game "Zero-sum game")  because each participant's gain or loss of utility is exactly balanced by the losses or gains of the utility of the other participants. If the participants' total gains are added up and their total losses subtracted, the sum will be zero. The game can be written in a  [payoff matrix](https://en.wikipedia.org/wiki/Payoff_matrix "Payoff matrix")  (pictured right - from Even's point of view). Each cell of the matrix shows the two players' payoffs, with Even's payoffs listed first. Matching pennies is used primarily to illustrate the concept of  [mixed strategies](https://en.wikipedia.org/wiki/Mixed_strategy "Mixed strategy")  and a mixed strategy  [Nash equilibrium](https://en.wikipedia.org/wiki/Nash_equilibrium "Nash equilibrium").[[1]](https://en.wikipedia.org/wiki/Matching_pennies#cite_note-1) This game has no  [pure strategy](https://en.wikipedia.org/wiki/Pure_strategy "Pure strategy")  [Nash equilibrium](https://en.wikipedia.org/wiki/Nash_equilibrium "Nash equilibrium")  since there is no pure strategy (heads or tails) that is a  [best response](https://en.wikipedia.org/wiki/Best_response "Best response")  to a best response. In other words, there is no pair of pure strategies such that neither player would want to switch if told what the other would do. Instead, the unique Nash equilibrium of this game is in  [mixed strategies](https://en.wikipedia.org/wiki/Mixed_strategy "Mixed strategy"): each player chooses heads or tails with equal probability. In this way, each player makes the other indifferent between choosing heads or tails, so neither player has an incentive to try another strategy.
 
 [Game code on Python 3.9](https://github.com/doguilmak/Game-Theory/blob/main/games/matching_pennies.py):
 
@@ -296,8 +318,8 @@ Matching Pennies is a  [zero-sum game](https://en.wikipedia.org/wiki/Zero-sum_ga
 
 References:
 
- - https://en.wikipedia.org/wiki/Matching_pennies
- - http://web.stanford.edu/~rjohari/teaching/notes/336_lecture7_2007.pdf
+ - [Wikipedia](https://en.wikipedia.org/wiki/Matching_pennies)
+ - [Stanford University](http://web.stanford.edu/~rjohari/teaching/notes/336_lecture7_2007.pdf)
 
 ## Coordination Game
 
@@ -312,8 +334,8 @@ In this game, players have **exactly the same interests:**
 
 |  | $$Left$$ | $$Right$$ |
 |:--:|:--:|:--:|
-| **$$Left$$** | $+1$, $+1$ | $0$, $0$ |
-| **$$Right$$** | $0$, $0$ | $+1$, $+1$ |
+| **$$Left$$** | $1$, $1$ | $0$, $0$ |
+| **$$Right$$** | $0$, $0$ | $1$, $1$ |
 
 <br>
 
@@ -359,12 +381,72 @@ In this game, players have **exactly the same interests:**
 
 References:
 
- - https://en.wikipedia.org/wiki/Coordination_game
- - https://www.coursera.org/learn/game-theory-1
+ - [Wikipedia](https://en.wikipedia.org/wiki/Coordination_game)
+ - [Coursera Game Theory](https://www.coursera.org/learn/game-theory-1)
 
 ## Battle of the Sexes
 
-To be added soon...
+Battle of sexes is the most interesting game combine elements of cooperation and
+competition. In  game theory, the **battle of the sexes**  is a two-player coordination that also involves elements of conflict. The game was introduced in 1957 by  [R. Duncan Luce](https://en.wikipedia.org/wiki/R._Duncan_Luce "R. Duncan Luce")  and  [Howard Raiffa](https://en.wikipedia.org/wiki/Howard_Raiffa "Howard Raiffa")  in their classic book,  some authors prefer to avoid assigning sexes to the players and instead use Players 1 and 2, and some refer to the game as  **Bach or Stravinsky**, using two concerts as the two events. The game description here follows Luce and Raiffa's original story.
+
+Imagine that a man and a woman hope to meet this evening, but have a choice between two events to attend, a prize fight. The man would prefer to go to prize fight. The woman would prefer the ballet. Both would prefer to go to the same event rather than different ones. If they cannot communicate, where should they go?
+
+The  [payoff matrix](https://en.wikipedia.org/wiki/Payoff_matrix "Payoff matrix")  labeled **Battle of the Sexes** shows the payoffs when the man chooses a row and the woman chooses a column. In each cell, the first number represents the man's payoff and the second number the woman's.
+
+<br>
+
+|  | $$Prize\ Fight$$ | $$Ballet$$ |
+|:--:|:--:|:--:|
+| **$$Prize\ Fight$$** | $+10$, $+7$ | $0$, $0$ |
+| **$$Ballet$$** | $0$, $0$ | $+7$, $+10$ |
+
+<br>
+
+[Game code on Python 3.9](https://github.com/doguilmak/Game-Theory/blob/main/games/battle_of_sexes.py):
+
+	import random
+	your_desicion=0
+	woman_desicion=0      
+	    
+	games2play = int(input('How many games would you like to play?\n'))
+	possible_actions = ["prize fight", "ballet"] 
+	while True:
+	    
+	    if games2play == 0:
+	        print("\nRANDOM SELECTION")
+	        print(f"Your reward: {your_desicion}.")
+	        print(f"Women's reward: {woman_desicion}.")
+	        break   
+	        
+	    person_action_random = random.choice(possible_actions)
+	    print("\n --------------------------\n")
+	    user_action = input("Enter a choice (prize fight, ballet): \n")
+	    print(f"You chose {user_action}, women chose {person_action_random}.")
+	    if user_action == "prize fight" and person_action_random == "prize fight":
+	        print("You both decided to go to Prize Fight.")
+	        your_desicion+=10
+	        woman_desicion+=7
+	        
+	    elif user_action == "prize fight" and person_action_random == "ballet":
+	        print("You both didn't satisfied.")
+
+	    elif user_action == "ballet" and person_action_random == "prize fight":
+	        print("You both didn't satisfied.")
+	        
+	    elif user_action == "ballet" and person_action_random == "ballet":
+	        print("You both decided to go to Ballet.")
+	        your_desicion+=7
+	        woman_desicion+=10
+	        
+	    else:
+	        print("Unexpected input.")
+	        
+	    games2play-=1
+
+References:
+
+ - [Wikipedia](https://en.wikipedia.org/wiki/Battle_of_the_sexes_%28game_theory%29)
+ - [Coursera Game Theory](https://www.coursera.org/learn/game-theory-1)
 
 ## Contact Me
 
