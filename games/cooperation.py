@@ -59,7 +59,7 @@ while True:
     elif user_action == "right" and person_action_random == "right":
         print("You both took the same way!")
         your_desicion+=1
-        person_desicion-=1
+        person_desicion+=1
         
     else:
         print("Unexpected input.")
