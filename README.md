@@ -92,9 +92,9 @@ $$a^*_{i} \in BR(a_{-i}) \iff \forall a_i \in A_i, u_i(a^*_{i}, a_{-i}) \ge u_i(
 
 Nash equilibrium is a concept within game theory where the optimal outcome of a game is where there is no incentive to deviate from the initial strategy. More specifically, the Nash equilibrium is a concept of game theory where the optimal outcome of a game is one where no player has an incentive to deviate from their chosen strategy after considering an opponent's choice.1
 
-Overall, an individual can receive no incremental benefit from changing actions, assuming other players remain constant in their strategies. A game may have multiple Nash equilibria or none at all.
+Overall, an individual can receive no incremental benefit from changing actions, assuming other players remain constant in their strategies. A game may have multiple Nash equilibria or none at all. **Pure Strategy** Nash Equilibrium
 
-$a = \langle a_1, ...\ , a_n \rangle$ is a **Pure Strategy** Nash Equilibrium $\iff \forall_i, a_i \in BR(a_{-i}).$
+$$a = \langle a_1, ...\ , a_n \rangle \iff \forall_i, a_i \in BR(a_{-i}).$$
 
 Reference: 
  - [Investopedia](https://www.cs.ubc.ca/~kevinlb/teaching/isci330%20-%202006-7/Lectures/lect3.pdf)
