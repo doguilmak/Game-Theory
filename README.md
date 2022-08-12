@@ -397,8 +397,8 @@ The  [payoff matrix](https://en.wikipedia.org/wiki/Payoff_matrix "Payoff matrix"
 
 |  | $$Prize\ Fight$$ | $$Ballet$$ |
 |:--:|:--:|:--:|
-| **$$Prize\ Fight$$** | $+10$, $+7$ | $0$, $0$ |
-| **$$Ballet$$** | $0$, $0$ | $+7$, $+10$ |
+| **$$Prize\ Fight$$** | $10$, $7$ | $0$, $0$ |
+| **$$Ballet$$** | $0$, $0$ | $7$, $10$ |
 
 <br>
 
