@@ -103,7 +103,6 @@ TCP Backoff Game written as matrix (more information about game on below).
 the best response is **the strategy (or strategies) which produces the most favorable outcome for a player, taking other players' strategies as given.**
 
 Let $a_{-i}$ = $\langle a_1, ...\ , a_{i-1}, a_{i+1}, ...\ , a_n \rangle$, now $a = (a_{-i}, a_i)$:
-
 $a^*_{i} \in BR (a_{-i}) \iff \forall a_i \in A_i, u_i (a^*_{i}, a_{-i}) \ge u_i (a_{i}, a_{-i})$
 
 ### Nash Equilibrium
