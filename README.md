@@ -1,26 +1,40 @@
+<h1 align=center><font size = 6>Game Theory</font></h1>
 
-# Game Theory
+<img  src="https://images.pexels.com/photos/585292/pexels-photo-585292.jpeg"  height=550  width=1000  alt="https://www.pexels.com/"/>  
 
-## Project Description
+<small>Picture Source: <a href="https://www.pexels.com/tr-tr/@padrinan/">Miguel Á.  Padriñán</a></small>  
+
+<br>
+
+## Introduction
 
 In this project, you will be able to access the games and codes that I made which are shown to us in the Game Theory lecture. These games were created in Python. Within the scope of this project, information will be given about the rules and some details of **TCP Backoff, Prisoner's dilemma, Matching Pennies, Coordination, and Battle of the Sexes game**.
 
----
-
+<br>
 
 ### Key Ingredients
 
 #### Players
 
-Players are the desicion makers. It might be people, goverments, companies or etc.
+Players are the individuals, entities, or decision-makers involved in a strategic situation or game. They can represent a wide range of actors, such as individuals, companies, countries, or even animals, depending on the context of the game. Each player in a game has a set of possible actions or strategies they can choose from.
+
+Players are typically denoted by labels, such as Player 1, Player 2, and so on, to distinguish them from each other. The choices made by each player impact the outcomes and payoffs in the game, and players are assumed to act rationally, trying to maximize their own utility or achieve their own objectives.
+
+<br>
 
 #### Actions
 
-It is about what players can do in a game or auction. It is about what are you going to do in spesific situation. For example, decide how to vote or vote to who.
+Actions refer to the choices or strategies available to each player in a game. In most games, each player has a set of possible actions they can take, and these actions determine how the game unfolds. Actions are the means by which players interact and make decisions in a strategic setting.
+
+Actions can be as simple as choosing a number or as complex as making a series of moves in a game like chess. The set of possible actions for each player is often referred to as their "strategy space" or "strategy set." Players select their actions based on their preferences, objectives, and beliefs about the actions of other players. Analyzing the actions taken by players and how they respond to one another's choices is a fundamental part of game theory. It helps determine the outcomes, payoffs, and strategies that players might adopt in various strategic situations.
+
+<br>
 
 #### Payoffs
 
-For example, do players care about some profit? Do they care about other players?
+Payoffs are the quantifiable measures of the benefits, costs, or utilities that each player receives as a result of their choices and the choices of other players in a game. For example, do players care about some profit? Do they care about other players? Payoffs can be in the form of monetary gains, points, satisfaction, or any other relevant measure, depending on the specific context of the game.
+
+The payoffs for each player are typically summarized in a payoff matrix or a payoff function, which shows how each player's payoff depends on their own actions and the actions of others. These payoffs reflect the preferences and objectives of the players and are used to model the rational decision-making process. Players aim to select actions that maximize their own payoffs. Analyzing payoffs is essential in game theory because it helps determine the strategies that players are likely to adopt. Players often seek to maximize their expected payoffs, which can lead to various strategic outcomes and equilibrium points, such as Nash equilibria, in different types of games. 
 
 <br>
 
@@ -43,9 +57,13 @@ Utility function of payoff function for player $i: u_i : A \mapsto \mathbb{R}.$
 
  - $u = (u_1, u_2, ... , u_n)$, is a profile of utility functions.
 
+<br>
+
 ####  Extensive Form
 
-Players move sequentially, represented as a tree like chess for example. We will keep track of what each player knows when he or she makes each desicion.
+In game theory, the extensive form is a representation of a game that explicitly captures the sequential nature of the game and the timing of players' moves. It is particularly useful for modeling games with multiple stages and players who make decisions in a specific order over time. The extensive form of a game is often depicted as a tree or a graph.
+
+<br>
 
 #### Standart Matrix Representation
 
@@ -86,7 +104,7 @@ the best response is **the strategy (or strategies) which produces the most favo
 
 Let $a_{-i}$ = $\langle a_1, ...\ , a_{i-1}, a_{i+1}, ...\ , a_n \rangle$, now $a = (a_{-i}, a_i)$:
 
-$$a^*_{i} \in BR(a_{-i}) \iff \forall a_i \in A_i, u_i(a^*_{i}, a_{-i}) \ge u_i(a_{i}, a_{-i}).$$
+$a^*_{i} \in BR(a_{-i}) \iff \forall a_i \in A_i, u_i(a^*_{i}, a_{-i}) \ge u_i(a_{i}, a_{-i}).$
 
 ### Nash Equilibrium
 
@@ -96,7 +114,7 @@ Overall, an individual can receive no incremental benefit from changing actions,
 
 $$a = \langle a_1, ...\ , a_n \rangle \iff \forall_i, a_i \in BR(a_{-i}).$$
 
-Reference: 
+References: 
  - [Investopedia](https://www.cs.ubc.ca/~kevinlb/teaching/isci330%20-%202006-7/Lectures/lect3.pdf)
  - [Coursera Game Theory](https://www.coursera.org/learn/game-theory-1)
 
@@ -454,4 +472,3 @@ If you have something to say to me please contact me:
 
  - Twitter: [Doguilmak](https://twitter.com/Doguilmak)  
  - Mail address: doguilmak@gmail.com
- 
