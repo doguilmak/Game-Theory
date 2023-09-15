@@ -1,6 +1,6 @@
 <h1 align=center><font size = 6>Game Theory</font></h1>
 
-<img  src="https://images.pexels.com/photos/585292/pexels-photo-585292.jpeg"  height=550  width=1000  alt="https://www.pexels.com/"/>  
+<img  src="https://i.ytimg.com/vi/t9Lo2fgxWHw/maxresdefault.jpg"  height=550  width=1000  alt="https://www.pexels.com/"/>  
 
 <small>Picture Source: <a href="https://www.pexels.com/tr-tr/@padrinan/">Miguel Á.  Padriñán</a></small>  
 
